@@ -10,7 +10,9 @@
 - Are there internal campaign data sources we should include later, such as donor lists, CRM exports, call-time logs, or event records?
 - What should the final August presentation emphasize: technical architecture, business usefulness, or campaign readiness?
 
-### Source Inventory
+## For Ayesha / Team
+
+### Template Field Questions
 
 - What does the **owner** field represent? The person maintaining the source, the original data provider, or the team member responsible for verification?
 - What does **candidates_supported** represent? Should it list the target candidates searched or only candidates with data returned by the source?
@@ -20,8 +22,6 @@
 - Should verification_status use standardized values (e.g., Verified, Pending, Partial)?
 
 ---
-
-## For Ayesha / Team
 
 ### Source Review
 
@@ -41,11 +41,6 @@ The following fields could benefit from clearer definitions:
 - priority
 - verification_status
 
-### Dashboard
-
-- Which source caveats should be surfaced directly in the dashboard versus remaining internal documentation?
-- Should source freshness or last verification date be displayed to users?
-
 ---
 
 ## Technical Questions
@@ -54,3 +49,4 @@ The following fields could benefit from clearer definitions:
 - Should orchestration be Prefect or Dagster-lite?
 - Should the first dashboard be Streamlit?
 - Should validation use Pydantic only first, or also Great Expectations/Soda later?
+
