@@ -9,7 +9,10 @@ REPORT_DIR.mkdir(parents=True, exist_ok=True)
 REPORT_PATH = REPORT_DIR / "target_3_validation_report.csv"
 
 def main():
-    df = pd.read_csv(INPUT_PATH, dtype={"filer_id": str})
+    df = pd.read_csv(INPUT_PATH, dtype={
+        "bar_number": str,
+        "filer_id": str,
+    })
     results = []
 
     for idx, row in df.iterrows():
