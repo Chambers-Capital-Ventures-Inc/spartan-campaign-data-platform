@@ -1,0 +1,4 @@
+gold_output,path,validation_status,row_count,missing_columns
+gold_candidate_dossiers,data/gold/gold_candidate_dossiers.csv,passed,3,
+gold_campaign_readiness,data/gold/gold_campaign_readiness.csv,passed,3,
+gold_risk_signals,data/gold/gold_risk_signals.csv,passed,17,
