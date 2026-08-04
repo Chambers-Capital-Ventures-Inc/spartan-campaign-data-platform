@@ -1,0 +1,4 @@
+candidate_name,court_name,incumbent_status,readiness_score,readiness_label,fields_complete,fields_possible,missing_or_review_fields,overall_confidence
+Joe Radler,311th Family Court,Challenger,1.0,High,10,10,None,High
+Paul Sullivan,113th Civil Court,Challenger,1.0,High,10,10,None,High
+Tami Pierce,180th Criminal Court,Incumbent,1.0,High,10,10,None,High

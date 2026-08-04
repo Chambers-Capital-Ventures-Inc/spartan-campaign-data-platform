@@ -1,0 +1,18 @@
+candidate_name,risk_type,risk_level,risk_message,source_id,recommended_action
+Joe Radler,court_metric_interpretation,Medium,"OCA metrics are court-level context for the seat, not individual candidate performance.",SRC002,Preserve court-level caveat anywhere OCA metrics appear.
+Joe Radler,challenger_interpretation,High,"Candidate is a challenger, so current court metrics should not be framed as the candidate's personal record.",SRC002,Use wording: court-level context for the seat this candidate is running for.
+Joe Radler,campaign_finance_scope,Medium,"TEC contribution and expenditure values are latest report-period totals, not lifetime or full-cycle totals.",SRC005,Display report-period caveat near campaign finance values.
+Joe Radler,scjc_scope,Medium,SCJC result is source-scoped. No matching public sanction found in checked pages does not mean no sanctions ever.,SRC006,Use source-scoped wording for sanctions checks.
+Joe Radler,source_link_specificity,Low,Campaign finance URL is a source description/search page rather than a direct report URL.,SRC005,Add direct TEC filer/report URL when available.
+Paul Sullivan,court_metric_interpretation,Medium,"OCA metrics are court-level context for the seat, not individual candidate performance.",SRC002,Preserve court-level caveat anywhere OCA metrics appear.
+Paul Sullivan,challenger_interpretation,High,"Candidate is a challenger, so current court metrics should not be framed as the candidate's personal record.",SRC002,Use wording: court-level context for the seat this candidate is running for.
+Paul Sullivan,campaign_finance_scope,Medium,"TEC contribution and expenditure values are latest report-period totals, not lifetime or full-cycle totals.",SRC005,Display report-period caveat near campaign finance values.
+Paul Sullivan,scjc_scope,Medium,SCJC result is source-scoped. No matching public sanction found in checked pages does not mean no sanctions ever.,SRC006,Use source-scoped wording for sanctions checks.
+Paul Sullivan,source_link_specificity,Low,Campaign finance URL is a source description/search page rather than a direct report URL.,SRC005,Add direct TEC filer/report URL when available.
+Paul Sullivan,high_long_pending_context,Medium,Long-pending court context is relatively high (22.2%). This requires careful court-level interpretation.,SRC002,"If shown in dashboard, explain threshold and court-level scope."
+Tami Pierce,court_metric_interpretation,Medium,"OCA metrics are court-level context for the seat, not individual candidate performance.",SRC002,Preserve court-level caveat anywhere OCA metrics appear.
+Tami Pierce,incumbent_interpretation,Medium,"Candidate is an incumbent, but court-level metrics may still reflect staffing, filings, case mix, and broader court-system conditions.",SRC002,Avoid framing OCA metrics as sole proof of individual responsibility.
+Tami Pierce,campaign_finance_scope,Medium,"TEC contribution and expenditure values are latest report-period totals, not lifetime or full-cycle totals.",SRC005,Display report-period caveat near campaign finance values.
+Tami Pierce,scjc_scope,Medium,SCJC result is source-scoped. No matching public sanction found in checked pages does not mean no sanctions ever.,SRC006,Use source-scoped wording for sanctions checks.
+Tami Pierce,source_link_specificity,Low,Campaign finance URL is a source description/search page rather than a direct report URL.,SRC005,Add direct TEC filer/report URL when available.
+Tami Pierce,high_long_pending_context,Medium,Long-pending court context is relatively high (15.2%). This requires careful court-level interpretation.,SRC002,"If shown in dashboard, explain threshold and court-level scope."
