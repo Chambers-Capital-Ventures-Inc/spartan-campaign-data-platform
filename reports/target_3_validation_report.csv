@@ -1,0 +1,13 @@
+row_number,candidate_name,validation_status,error
+1,Joe Radler,failed,"1 validation error for CandidateDossier
+bar_number
+  Input should be a valid string [type=string_type, input_value=24067148, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type"
+2,Paul Sullivan,failed,"1 validation error for CandidateDossier
+bar_number
+  Input should be a valid string [type=string_type, input_value=24102546, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type"
+3,Tami Pierce,failed,"1 validation error for CandidateDossier
+bar_number
+  Input should be a valid string [type=string_type, input_value=24037282, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.13/v/string_type"
