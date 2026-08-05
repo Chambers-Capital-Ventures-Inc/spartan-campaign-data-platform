@@ -446,6 +446,7 @@ def render_hero() -> None:
                 profile.
             </p>
         </div>
+
         """,
         unsafe_allow_html=True,
     )
