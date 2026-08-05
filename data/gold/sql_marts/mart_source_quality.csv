@@ -1,0 +1,4 @@
+source_id,total_context_notes,high_severity_notes,medium_severity_notes,low_severity_notes,candidates_referencing_source,distinct_context_types,run_id,exported_at
+SRC002,8,2,6,0,3,"challenger_interpretation, court_metric_interpretation, high_long_pending_context, incumbent_interpretation",run_20260805T183900Z,2026-08-05T18:39:00.612729+00:00
+SRC005,6,0,3,3,3,"campaign_finance_scope, source_link_specificity",run_20260805T183900Z,2026-08-05T18:39:00.612729+00:00
+SRC006,3,0,3,0,3,scjc_scope,run_20260805T183900Z,2026-08-05T18:39:00.612729+00:00
