@@ -1,0 +1,7 @@
+pandas
+pydantic
+streamlit
+duckdb
+pyarrow
+dagster
+dagster-webserver
