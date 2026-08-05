@@ -1,0 +1,4 @@
+run_id: run_20260804T202306Z
+status: failed
+timestamp_utc: 2026-08-04T20:23:09.711282+00:00
+error: Step failed with exit code 1: Validate silver target-three dossier
