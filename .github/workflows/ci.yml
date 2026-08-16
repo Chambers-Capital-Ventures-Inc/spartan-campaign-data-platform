@@ -1,0 +1,66 @@
+# CI for the Spartan Judicial campaign data platform.
+#
+# Runs the test suite and the full local pipeline (CSV cleaning/validation
+# -> gold outputs -> Parquet lakehouse export -> DuckDB warehouse -> SQL
+# marts -> machine-readable validation report) end to end on every push and
+# pull request.
+#
+# This workflow is entirely self-contained:
+#   - No database is required. The platform's storage layer is local
+#     CSV/Parquet files plus a local DuckDB file (data/warehouse/); nothing
+#     here connects to Postgres or any other external database.
+#   - No LLM API key is required. Every plain-English explanation in this
+#     project is produced by deterministic template functions, not a live
+#     LLM call.
+#   - If Postgres-backed or LLM-backed features are added later, they must
+#     ship with a mock/fallback mode so this workflow keeps running without
+#     secrets. Do not add steps here that require repository secrets.
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      # Some existing scripts (e.g. src/pipeline/run_pipelne.py) invoke
+      # other project scripts as `python src/<module_path>.py` subprocesses
+      # that in turn use absolute imports like `from src.schemas...`. Those
+      # imports only resolve when the repo root is on sys.path, which
+      # PYTHONPATH guarantees here without modifying any existing script.
+      PYTHONPATH: ${{ github.workspace }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pytest
+        run: python -m pytest
+
+      # NOTE: the one-command pipeline runner's actual filename is
+      # run_pipelne.py (as currently committed in src/pipeline/).
+      - name: Run the target-three data pipeline
+        run: python src/pipeline/run_pipelne.py
+
+      - name: Export lakehouse layers (Parquet)
+        run: python src/storage/export_lakehouse_layers.py
+
+      - name: Build DuckDB warehouse
+        run: python src/storage/build_duckdb.py
+
+      - name: Run SQL staging and mart models
+        run: python src/storage/run_sql_models.py
+
+      - name: Generate machine-readable validation report
+        run: python src/validation/generate_validation_json.py
