@@ -1,3 +1,4 @@
+<img width="6895" height="8191" alt="Data Validation Pipeline-2026-08-16-165748" src="https://github.com/user-attachments/assets/8aa0dfd7-0f1f-421b-9298-74d6ceb56250" />
 # Spartan Judicial Campaign Data Platform
 
 ## Overview
@@ -57,5 +58,4 @@ Phase 0: Scope, onboarding, and repo setup.
 - Final evaluation report
 
 
-
-![alt text](image.png)
+<img width="6895" height="8191" alt="Data Validation Pipeline-2026-08-16-165748" src="https://github.com/user-attachments/assets/8cf8286e-c668-44be-99ca-30af113b4e22" />
