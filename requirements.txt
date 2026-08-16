@@ -5,3 +5,9 @@ duckdb
 pyarrow
 dagster
 dagster-webserver
+
+pytest
+tabulate
+python-dotenv
+sqlalchemy
+psycopg[binary]
