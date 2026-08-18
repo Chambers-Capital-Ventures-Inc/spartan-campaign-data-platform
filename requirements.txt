@@ -1,0 +1,8 @@
+pandas
+pydantic
+streamlit
+duckdb
+pyarrow
+pytest
+sqlalchemy
+psycopg2-binary
