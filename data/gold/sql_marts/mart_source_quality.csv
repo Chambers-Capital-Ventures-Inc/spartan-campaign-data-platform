@@ -1,4 +1,10 @@
 source_id,total_context_notes,high_severity_notes,medium_severity_notes,low_severity_notes,candidates_referencing_source,distinct_context_types,run_id,exported_at
+<<<<<<< HEAD
+SRC002,8,2,6,0,3,"challenger_interpretation, court_metric_interpretation, high_long_pending_context, incumbent_interpretation",run_20260818T143729Z,2026-08-18T14:37:29.235748+00:00
+SRC005,6,0,3,3,3,"campaign_finance_scope, source_link_specificity",run_20260818T143729Z,2026-08-18T14:37:29.235748+00:00
+SRC006,3,0,3,0,3,scjc_scope,run_20260818T143729Z,2026-08-18T14:37:29.235748+00:00
+=======
 SRC002,8,2,6,0,3,"challenger_interpretation, court_metric_interpretation, high_long_pending_context, incumbent_interpretation",run_20260805T204544Z,2026-08-05T20:45:44.344561+00:00
 SRC005,6,0,3,3,3,"campaign_finance_scope, source_link_specificity",run_20260805T204544Z,2026-08-05T20:45:44.344561+00:00
 SRC006,3,0,3,0,3,scjc_scope,run_20260805T204544Z,2026-08-05T20:45:44.344561+00:00
+>>>>>>> 6b8f74f12268091283c5e76849e89658758059df

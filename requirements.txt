@@ -3,11 +3,6 @@ pydantic
 streamlit
 duckdb
 pyarrow
-dagster
-dagster-webserver
-
 pytest
-tabulate
-python-dotenv
 sqlalchemy
-psycopg[binary]
+psycopg2-binary
