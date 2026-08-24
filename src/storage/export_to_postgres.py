@@ -41,7 +41,11 @@ from typing import Any
 
 import pandas as pd
 import sqlalchemy as sa
+from sqlalchemy.dialects import postgresql
 from sqlalchemy.dialects.postgresql import insert as pg_insert
+from dotenv import load_dotenv
+
+
 
 # ---------------------------------------------------------------------------
 # Paths

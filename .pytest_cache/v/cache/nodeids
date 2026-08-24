@@ -1,0 +1,9 @@
+[
+  "tests/test_generate_validation_json.py::test_build_validation_report_has_required_keys",
+  "tests/test_generate_validation_json.py::test_build_validation_report_passes_on_checked_in_reports",
+  "tests/test_generate_validation_json.py::test_collect_failed_checks_reports_gold_failures",
+  "tests/test_generate_validation_json.py::test_row_counts_include_each_gold_output",
+  "tests/test_generate_validation_json.py::test_summarize_gold_validation_all_passed",
+  "tests/test_generate_validation_json.py::test_summarize_silver_validation_flags_failures",
+  "tests/test_import_probe.py::test_import_works"
+]
